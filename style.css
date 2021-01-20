@@ -1,0 +1,848 @@
+/*  import google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* custom scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* all similar content styling codes */
+section{
+    padding: 100px 0;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+.about, .values, .focus, .newsletter, .portfolio, .contact, .footer{
+    font-family: 'Poppins', sans-serif;
+    color: #333333;
+}
+.about .about-content, 
+.values, .values-content,
+.focus, .focus-content,
+.portfolio, .container,
+.contact .contact .container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+section .title{
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+section .subtitle{
+    position: relative;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+
+/*************************************************************
+HEADER STYLING: Fixed Position (Always stay at the top) 
+*************************************************************/
+/* header styling */
+.header {
+position: fixed;
+top: 0;
+z-index: 1;
+width: 100%;
+background-color: white;
+}
+  
+/* The progress container (background) */
+.progress-container {
+width: 100%;
+height: 3px;
+background: rgba(255,86,140, 0.6);
+}
+  
+  /* The progress bar (scroll indicator) */
+.progress-bar {
+height: 3px;
+background: crimson;
+width: 0%;
+}
+
+/* navbar styling */
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 30px 0;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+    color: white;
+    text-shadow: 2px 2px 3px black;
+}
+.navbar.sticky{
+    padding: 15px 0;
+    background: black;
+    color: white;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,0.2);
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+    text-shadow: 2px 2px 3px black;
+}
+.navbar .logo a span{
+    color: crimson;
+    transition: all 0.3s ease;
+}
+.navbar.sticky .logo a{
+    color: #fff;
+}
+.navbar.sticky .logo a span{
+    color: crimson;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    display: block;
+    text-transform: uppercase;
+    color: white;
+    margin-left: 12px;
+    transition: color 0.3s ease;
+    text-shadow: 2px 2px 3px black;
+    z-index: 1;
+}
+.navbar.sticky .menu li a{
+    color: white;
+}
+
+/* menu btn styling */
+.menu-btn{
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+/******************
+Scrol-Up Button 
+*******************/
+.scroll-up-btn{
+    position: fixed;
+    height: 35px;
+    width: 35px;
+    background: crimson;
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 35px;
+    color: #fff;
+    z-index: 9999;
+    font-size: 15px;
+    border-radius: 50%;
+    border-bottom-width: 2px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.scroll-up-btn.show{
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+}
+.scroll-up-btn:hover{
+    filter: brightness(90%);
+}
+
+/************************
+HOME SECTION STYLING 
+************************/ 
+.home{
+    display: flex;
+    background: url("images/Banner.png") no-repeat center;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+.home .home-content .text-1{
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 60px;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    
+}
+.home .home-content .text-2{
+    font-size: 90px;
+    font-weight: 600;
+    line-height: 90px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 5px black;
+}
+.home .home-content .text-3{
+    font-size: 20px;
+    font-weight: 600px;
+    line-height: 30px;
+    margin: 5px 0;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+.home .home-content a{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    font-weight: 400;
+    border-radius: 28px;
+    border: none;
+    transition: all 0.3s ease;
+}
+.home .home-content a:hover{
+    background: #ff568c;
+}
+
+/************************
+ABOUT SECTION STYLING 
+************************/ 
+.about .about-content .left{
+    width: 45%;
+}
+.about .about-content .left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.about .about-content .right{
+    width: 55%;
+}
+.about .about-content .right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.about .about-content .right .text span{
+    color: crimson;
+}
+.about .about-content .right p{
+    text-align: justify;
+}
+
+/* Social Menu */
+.about .about-content .right .social-menu ul{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    padding: 0;
+    margin: 0;
+    transform: translateX(-52%);
+    display: flex;
+}
+.about .about-content .right .social-menu ul li{
+    list-style: none;
+    margin:0 15px; 
+}
+.about .about-content .right .social-menu ul li .fa{
+    font-size: 30px;
+    line-height: 60px;
+    transition: .3s;
+    color: #000;
+}
+.about .about-content .right .social-menu ul li .fa:hover{
+    color: #fff;
+}
+.about .about-content .right .social-menu ul li a{
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color:#fff;
+    border: 1px solid rgba(0, 0, 0, 0);
+    transition: .6s;
+    box-shadow: 0 5px 4px rgba(0,0,0,.5);
+}
+.about .about-content .right .social-menu ul li a i{
+    transform: translate(-12px,-10px);
+    width: 30%;
+    height: 30%;
+}
+.about .about-content .right .social-menu ul li a:hover{
+    transform: translate(0,-12px)
+}
+.about .about-content .right .social-menu ul li:nth-child(1) a:hover{
+    background-color: #55acee;
+}
+.about .about-content .right .social-menu ul li:nth-child(2) a:hover{
+    background-color: #0077B5;
+}
+.about .about-content .right .social-menu ul li:nth-child(3) a:hover{
+    background-color: #cd201f;
+}
+.about .about-content .right .social-menu ul li:nth-child(4) a:hover{
+    background-color: #e4405f;
+}
+.about .about-content .right .social-menu ul li:nth-child(5) a:hover{
+    background-color: grey;
+}
+.about .about-content .right .social-menu ul li:nth-child(6) a:hover{
+    background-color: #4c75a3;
+}
+
+/* button */
+.about .about-content .right a{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 28px;
+    border: none;
+    transition: all 0.3s ease;
+}
+.about .about-content .right a:hover{
+    background: #ff568c;
+}
+
+/*********************************
+FOCUS & VALUES SECTION STYLING 
+*********************************/ 
+.values{
+    background-color: #ffd1dc;
+}
+.focus .focus-content .card{
+    width: calc(33% - 20px);
+    background: #fff;
+    box-shadow: 0 0px 4px rgba(0,0,0, 0.15);
+    border-radius: 4px;
+    padding: 20px 25px;
+    margin: 10px 10px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+.values .values-content .card{
+    width: calc(24% - 20px);
+    background: #fff;
+    box-shadow: 0 0px 4px rgba(0,0,0, 0.15);
+    border-radius: 4px;
+    padding: 20px 25px;
+    margin: 10px 10px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+.focus .focus-content .card i{
+    font-size: 50px;
+    font-weight: 100;
+    transition: color 0.3s ease;
+}
+.focus .focus-content .card .text, .values .values-content .card .text{
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0 7px 0;
+}
+.focus .focus-content .card p, .values .values-content .card p{
+    font-size: 14px;
+    font-weight: normal;
+}
+
+/*********************************
+NEWSLETTER SECTION STYLING 
+*********************************/ 
+.newsletter{
+    background-color: #ffd1dc;
+}
+
+/*********************************
+PORTFOLIO SECTION STYLING 
+*********************************/   
+.portfolio{
+text-align: center;
+}
+
+.portfolio .row {
+    margin: 5px -6px;
+}
+  
+/* Add padding BETWEEN each column (if you want) */
+.portfolio .row, .row > .column {
+    padding: 5px;
+}
+  
+/* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 25%;
+    display: none; /* Hide columns by default */
+}
+
+/* Clear floats after rows */ 
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+} 
+  /* Content */
+  .content {
+    padding: 8px;
+}
+
+  .content:hover{
+    transform: translate(0,-12px)
+}
+  
+  /* The "show" class is added to the filtered elements */
+  .show {
+    display: block;
+}
+/*outline*/
+  .myBtnContainer{
+    display: inline-block;
+	border:1px solid #dddddd;
+	border-radius: 30px;
+	padding: 4px;
+    margin:0 0 20px;
+  }
+  /* Style the buttons */
+  .btn {
+    display: inline-block;
+	font-size: 16px;
+	color: #413e3e;
+	text-transform: uppercase;
+	line-height: 50px;
+    border: none;
+	border-radius: 25px;
+	font-weight: 500;
+	padding: 0 20px;
+	min-width: 130px;
+	cursor: pointer;
+	-webkit-transition:all 0.3s ease-in-out;
+	-ms-transition:all 0.3s ease-in-out;
+	-moz-transition:all 0.3s ease-in-out;
+	transition:all 0.3s ease-in-out;
+}
+  /* Add a grey background color on mouse-over */
+  .btn:hover {
+    background-color: #ffd1dc;
+}
+  
+  /* Add a dark background color to the active button */
+  .btn.active {
+    background-color: crimson;
+	color: #fff;
+}
+
+
+/*********************************
+CONTACT SECTION STYLING 
+*********************************/ 
+.contact{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100wh;
+    background: #ffd1dc;
+}
+.contact .text{
+    font-size: 17px;
+    margin-bottom: 30px;
+    margin-top: -15px;
+}
+/*Contact Info*/
+.contact .container{
+    position: relative;
+    min-width: 1100px;
+    min-height: 550px;
+    display: flex;
+    z-index: 1000;
+}
+.contact .container .contactinfo{
+    position: absolute;
+    top: 40px;
+    width: 350px;
+    height: calc(100% - 80px);
+    background: crimson;
+    z-index: 1;
+    padding: 40px;
+    display: flex;
+    border-radius: 4px;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 20px 20px rgba(0,0,0, 0.2);
+}
+.contact .container .contactinfo h2{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+}
+.contact .container .contactinfo .info{
+    position: relative;
+    margin: 20px 0;
+}
+.contact .container .contactinfo .info li{
+    position: relative;
+    list-style: none;
+    display: flex;
+    margin: 20px 0;
+    cursor: pointer;
+    align-items: flex-start;
+}
+.contact .container .contactinfo .info li span:nth-child(1){
+    width: 30px;
+    min-width: 30px;
+    transform: translateY(10px);
+}
+.contact .container .contactinfo .info li span:nth-child(1) img{
+    max-width: 100%;
+    filter: invert(1);
+    opacity: 0.5;
+}
+.contact .container .contactinfo .info li span:nth-child(2){
+    color: #fff;
+    margin-left: 10px;
+    font-weight: 300;
+    opacity: 0.5;
+}
+.contact .container .contactinfo .info li:hover span:nth-child(1) img,
+.contact .container .contactinfo .info li:hover span:nth-child(2){
+    opacity: 1;
+}
+.contact .container .contactinfo .social-menu{
+    position: relative;
+    display: flex;
+}
+.contact .container .contactinfo .social-menu li{
+    list-style: none;
+    margin-right: 15px;
+}
+.contact .container .contactinfo .social-menu li a{
+    text-decoration: none;
+}
+.contact .container .contactinfo .social-menu li a i{
+    color: #fff;
+    font-size: 30px;
+    opacity: 0.5;
+}
+.contact .container .contactinfo .social-menu li:hover a i{
+    opacity: 1;
+    transform: translateY(-5px);
+}
+
+/*Contact Form*/
+.contact .container .contactform{
+    position: absolute;
+    padding: 70px 50px;
+    background: #fff;
+    margin-left: 150px;
+    padding-left: 250px;
+    width: calc(100% - 150px);
+    height: 100%;
+    border-radius: 4px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+.contact .container .contactform h2{
+    color: #0f3959;
+    font-size: 24px;
+    font-weight: 500;
+}
+.contact .container .contactform .formbox{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+.contact .container .contactform .formbox .inputbox{
+    position: relative;
+    margin: 0 0 35px 0;
+}
+.contact .container .contactform .formbox .inputbox.w50{
+    width: 47%;
+}
+.contact .container .contactform .formbox .inputbox.w100{
+    width: 100%;
+}
+
+.contact .container .contactform .formbox .inputbox input,
+.contact .container .contactform .formbox .inputbox textarea,
+.contact .container .contactform .formbox .inputbox select{
+    width: 100%;
+    padding: 5px 0;
+
+    font-size: 18px;
+    font-weight: 300;
+    resize: none;
+    color: #333;
+    border: none;
+    border-bottom: 1px solid #777;
+    outline: none;
+}
+
+.contact .container .contactform .formbox .inputbox textarea{
+    min-height: 120px;
+}
+.contact .container .contactform .formbox .inputbox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: #333;
+    transition: 0.5s;
+    pointer-events: none;
+}
+.contact .container .contactform .formbox .inputbox input:focus ~ span,
+.contact .container .contactform .formbox .inputbox textarea:focus ~ span,
+.contact .container .contactform .formbox .inputbox input:valid ~ span,
+.contact .container .contactform .formbox .inputbox textarea:valid ~ span{
+    transform: translateY(-20px);
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #ff568c;
+
+}
+
+.contact .container .contactform .formbox .inputbox input[type="submit"]{
+    position: relative;
+    cursor: pointer;
+    background: crimson;
+    color: #fff;
+    border-radius: 25px;
+    border: none;
+    max-width: 150px;
+    padding: 12px;
+}
+.contact .container .contactform .formbox .inputbox input[type="submit"]:hover{
+    background: #ff568c;
+}
+#status{
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    transform: translateY(-25px);
+    color: #333333;
+    border-radius: 4px;
+    border: none;
+    max-width: 150px;
+    padding: 12px;
+}
+#status.success{
+    background-color: lightgreen;
+    animation: status 4s ease forwards;
+}
+#status.error{
+    background-color: lightcoral;
+    animation: status 4s ease forwards;
+}
+
+@keyframes status{
+    0%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    90%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    100%{
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+/*********************************
+FOOTER SECTION STYLING 
+*********************************/ 
+footer{
+    background:  black;
+    padding: 35px 23px;
+    color: white;
+    height: 80px;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+footer span span{
+    color: crimson;
+    text-decoration: none;
+}
+footer span a:hover{
+    text-decoration: underline;
+}
+
+
+/*********************************
+RESPONSIVE SECTION STYLING 
+*********************************/ 
+@media (max-width: 1300px) {
+    .home .max-width{
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 1104px) {
+    .about .about-content .left img{
+        height: 350px;
+        width: 350px;
+    }
+}
+
+@media (max-width: 991px) {
+    .max-width{
+        padding: 0 50px;
+    }
+}
+@media (max-width: 947px){
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+    .menu-btn i.active:before{
+        content: "\f00d";
+    }
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #111;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active{
+        left: 0;
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+    .home .home-content .text-2{
+        font-size: 70px;
+    }
+    .home .home-content .text-3{
+        font-size: 35px;
+    }
+    .home .home-content a{
+        font-size: 23px;
+        padding: 10px 30px;
+    }
+    .max-width{
+        max-width: 930px;
+    }
+    .about .about-content .column{
+        width: 100%;
+    }
+    .about .about-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    .about .about-content .right{
+        flex: 100%;
+    }
+    .services .serv-content .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+    .skills .skills-content .column,
+    .contact .contact-content .column{
+        width: 100%;
+        margin-bottom: 35px;
+    }
+}
+
+@media (max-width: 690px) {
+    .max-width{
+        padding: 0 23px;
+    }
+    .home .home-content .text-2{
+        font-size: 60px;
+    }
+    .home .home-content .text-3{
+        font-size: 32px;
+    }
+    .home .home-content a{
+        font-size: 20px;
+    }
+    .services .serv-content .card{
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .home .home-content .text-2{
+        font-size: 50px;
+    }
+    .home .home-content .text-3{
+        font-size: 27px;
+    }
+    .about .about-content .right .text,
+    .skills .skills-content .left .text{
+        font-size: 19px;
+    }
+    .contact .right form .fields{
+        flex-direction: column;
+    }
+    .contact .right form .name,
+    .contact .right form .email{
+        margin: 0;
+    }
+    .scroll-up-btn{
+        right: 15px;
+        bottom: 15px;
+        height: 38px;
+        width: 35px;
+        font-size: 23px;
+        line-height: 38px;
+    }
+}

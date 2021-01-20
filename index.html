@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+</head>
+<body>
+    <!------------------------------------------
+    HEADER; INCLUDES NAV AND PROGRESS BAR
+    ------------------------------------------->
+    <div class="header">
+        <!-- Progress Bar -->
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+        </div>
+
+        <!-- Navagation Bar -->
+        <nav class="navbar">
+            <div class="max-width">
+                <div class="logo"><a href="#">Praise<span>.</span></a></div>
+                <ul class="menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#focus">Focus</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <ul class="menu">
+                    <li><a href="https://twitter.com/praiseerianamie" target="_blank"><i class=" fa fa-twitter"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/praise-erianamie/" target="_blank"><i class=" fa fa-linkedin"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCqZus3N21a76RMlUajQWe_Q" target="_blank"><i class=" fa fa-youtube"></i></a></li>
+                    <li><a href="https://www.instagram.com/praiseerianamie/" target="_blank"><i class=" fa fa-instagram"></i></a></li>
+                    <li><a href="https://praiseerianamie.medium.com" target="_blank"><i class=" fa fa-medium"></i></a></li>
+                    <li><a href="mailto:praise.se47@gmail.com"><i class=" fa fa-envelope"></i></a></li>
+                </ul>
+                <div class="menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav> 
+    </div>
+    <!----------------------------------------->
+    
+    <!-- Scrol-Up Button -->
+    <div class="scroll-up-btn">
+        <i class="fas fa-caret-up"></i>
+    </div>
+    
+    <!------------------------------------------
+    HOME SECTION: Hi I'm ...
+    ------------------------------------------->
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Hi, I'm </div>
+                <div class="text-2">Praise Erianamie</div>
+                <div class="text-3"><span class="typing"></span></div>
+                <a href="#portfolio">My Porfolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!------------------------------------------
+    ABOUT SECTION: About Me ...
+    ------------------------------------------->
+    <section class="about" id="about">
+        <div class="max-width">
+            <div class="about-content">
+                <div class="left">
+                    <img src="images/profile-1.png" alt="">
+                </div>
+                <div class="right">
+                    <div class="text"> About Me </div>
+                    <p>Hi! I'm Praise. A 17-year-old innovator passionate about using emerging technology to not only
+                        solve the world's biggest problems but also make it affordable for those who need the technology 
+                        the most. Recently, I've been exploring exponential technologies like the Internet of Things, 
+                        Augmented/Virtual Reality and Robotics.<br><br> I'm currently working on developing the skills to work on 
+                        the biggest problems, impact millions and leave my footprint in the world. I write articles on things 
+                        I find interesting, build websites and manage social media pages for small nonprofits and businesses. 
+                        In my spare time, I like to learn more about modern philosophies, reading, listening to music and 
+                        playing the piano. </p>
+                    
+                    <div class="social-menu">
+                        <ul>
+                            <li><a href="https://www.twitter.com/praiseerianamie" target="_blank"><i class=" fa fa-twitter"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/praise-erianamie/" target="_blank"><i class=" fa fa-linkedin"></i></a></li>
+                            <li><a href="https://www.youtube.com/channel/UCqZus3N21a76RMlUajQWe_Q" target="_blank"><i class=" fa fa-youtube"></i></a></li>
+                            <li><a href="https://www.instagram.com/praiseerianamie/" target="_blank"><i class=" fa fa-instagram"></i></a></li>
+                            <li><a href="https://praiseerianamie.medium.com" target="_blank"><i class=" fa fa-medium"></i></a></li>
+                            <li><a href="mailto:praise.se47@gmail.com"><i class=" fa fa-envelope"></i></a></li>
+                        </ul>
+                    </div>
+                    
+                    <!--<a href="#">Download CV</a>-->
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!------------------------------------------
+    VALUES SECTION: A Closer Look into ...
+    ------------------------------------------->
+    <section class="values" id="values">
+        <div class="max-width">
+            <p class="subtitle">A Closer Look Into...</p>
+            <h2 class="title">My Personal & Core Values</h2>
+            <div class="values-content">
+                <div class="card">
+                    <div class="box">
+                        <div class="text">High Standards</div>
+                        <p>Setting high standards on things I care about and put myself in spaces that allow me to hustle.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <div class="text">Growth</div>
+                        <p>Always learning something new everyday to add my value to my life and be better than I was yesterday.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <div class="text">Accountability</div>
+                        <p>Taking ownership and  communicating to myself and others to keep myself on track to achieve a goal.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <div class="text">Determination</div>
+                        <p>The control and motivation to continue along the path of achieving my long term goal.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!------------------------------------------
+    FOCUS SECTION: Currently ...
+    ------------------------------------------->
+    <section class="focus" id="focus">
+        <div class="max-width">
+            <p class="subtitle">Currently...</p>
+            <h2 class="title">What I've been Focusing On</h2>
+            <div class="focus-content">
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-code"></i>
+                        <div class="text">Programming</div>
+                        <p>I've been learning a lot of programming languages such as Python, HTML, C++, CSS, and more. 
+                            And I'm looking forward to implement what I learn in my projects.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-lightbulb"></i>
+                        <div class="text">The Knowledge Society</div>
+                        <p>I am an innovator at The Knowledge Society, an accelerator program that equips students
+                            with the tools to impact the world through emerging technology.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-seedling"></i>
+                        <div class="text">Growth Mindset</div>
+                        <p>To maximize my growth and become better than the day before, I am also focusing on a growth
+                             mindsets; Boss Mentality, Done>Perfect and Stoicism.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-robot"></i>
+                        <div class="text">Building Projects</div>
+                        <p>I love doing hand-on work and building things myself, like this website! A project I'm currently 
+                            working on using an Arduino to create an  indoor smart farm.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div class="text">Education</div>
+                        <p>I believe that education is really important. I'm currently learning more about IoT but I also 
+                            like to read and expand my knowledge on improving my lifestyle.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-hands-helping"></i>
+                        <div class="text">Helping Others</div>
+                        <p>To make a better world we must help each other. I strive to give back and use
+                            my skills and knowledge to mentor & encourage others to make positive impacts.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!------------------------------------------
+    NEWSLETTER SECTION
+    ------------------------------------------->
+    <section class="newsletter" id="newsletter">
+        <div class="max-width">
+            <!-- MailerLite Universal -->
+            <script>
+                (function(m,a,i,l,e,r){ m['MailerLiteObject']=e;function f(){
+                var c={ a:arguments,q:[]};var r=this.push(c);return "number"!=typeof r?r:f.bind(c.q);}
+                f.q=f.q||[];m[e]=m[e]||f.bind(f.q);m[e].q=m[e].q||f.q;r=a.createElement(i);
+                var _=a.getElementsByTagName(i)[0];r.async=1;r.src=l+'?v'+(~~(new Date().getTime()/1000000));
+                _.parentNode.insertBefore(r,_);})(window, document, 'script', 'https://static.mailerlite.com/js/universal.js', 'ml');
+            
+                var ml_account = ml('accounts', '2445710', 'o9u3z9g2o2', 'load');
+            </script>
+            <!-- End MailerLite Universal -->
+            <div class="ml-form-embed" data-account="2445710:o9u3z9g2o2" data-form="3331291:n3k7p5"></div>
+        </div>
+    </section> 
+    
+    <!------------------------------------------
+    PORTFOLIO SECTION: 
+    ------------------------------------------->
+    <!-- Control buttons -->
+    <section class="portfolio" id="portfolio">
+        <div class="max-width">
+            <p class="subtitle">What I've Done...</p>
+            <h2 class="title">My Portfolio</h2>
+
+            <div class="myBtnContainer" id="myBtnContainer">
+                <button class="btn active" onclick="filterSelection('all')"> All</button>
+                <button class="btn" onclick="filterSelection('articles')"> Articles</button>
+                <button class="btn" onclick="filterSelection('videos')"> Videos</button>
+                <button class="btn" onclick="filterSelection('projects')"> Projects</button>
+                <button class="btn" onclick="filterSelection('websites')"> Websites</button>
+              </div>
+              
+              <!-- Portfolio Gallery Grid -->
+              <div class="row">
+                <div class="column articles">
+                  <div class="content">
+                      <a href="https://praiseerianamie.medium.com/introduction-to-digital-twins-optimizing-the-real-world-through-the-virtual-world-e72e4785fe6c" target="_blank">
+                          <img src="images/Article-1.png" alt="Mountains" style="width:100%">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="column articles">
+                    <div class="content">
+                        <a href="https://medium.com/swlh/ai-bias-title-in-progress-e615fffd9b4b?source=friends_link&sk=421d8a2c28ffd352ea7115a51fc07f7b" target="_blank">
+                            <img src="images/Article-3.png" alt="Mountains" style="width:100%">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="column articles">
+                    <div class="content">
+                        <a href="https://praiseerianamie.medium.com/prime-editing-a-saving-tool-2c6021922315" target="_blank">
+                            <img src="images/Article-2.png" alt="Mountains" style="width:100%">
+                        </a>
+                    </div>
+                </div>
+
+                <!--VIDEOS
+                <div class="column videos">
+                    <div class="content">
+                        <a href="www.possibilitychapel.com">
+                            <img src="images/horse.jpg" alt="Mountains" style="width:100%">
+                      </a>
+                    </div>
+                </div>
+                -->
+                <!--PROJECTS-->
+                <div class="column projects">
+                    <div class="content">
+                        <a href="https://www.darearts.com/speak-louder/" target="_blank">
+                            <img src="images/Project-1.png" alt="Mountains" style="width:100%">
+                        </a>
+                    </div>
+                </div>  
+
+                <!--WEBSITES-->
+                <div class="column websites">
+                    <div class="content">
+                        <a href="https://www.possibilitychapel.com" target="_blank">
+                            <img src="images/Website-1.png" alt="Mountains" style="width:100%">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="column websites">
+                    <div class="content">
+                        <a href="https://www.thepossibleme.ca" target="_blank">
+                            <img src="images/Website-2.png" alt="Mountains" style="width:100%">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="column websites">
+                    <div class="content">
+                        <a href="https://www.mind-bodywellness.ca" target="_blank">
+                            <img src="images/Website-3.png" alt="Mountains" style="width:100%">
+                        </a>
+                    </div>
+                </div>    
+                
+              <!-- END GRID -->
+            </div>
+        </div>
+    </section>
+
+    <!--JAVASCRIPT for the portfolio-->
+    <script>
+        filterSelection("all") // Execute the function and show all columns
+        function filterSelection(c) {
+        var x, i;
+        x = document.getElementsByClassName("column");
+        if (c == "all") c = "";
+        // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+        for (i = 0; i < x.length; i++) {
+            w3RemoveClass(x[i], "show");
+            if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+        }
+        }
+
+        // Show filtered elements
+        function w3AddClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+            if (arr1.indexOf(arr2[i]) == -1) {
+            element.className += " " + arr2[i];
+            }
+        }
+        }
+
+        // Hide elements that are not selected
+        function w3RemoveClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+            while (arr1.indexOf(arr2[i]) > -1) {
+            arr1.splice(arr1.indexOf(arr2[i]), 1); 
+            }
+        }
+        element.className = arr1.join(" ");
+        }
+
+        // Add active class to the current button (highlight it)
+        var btnContainer = document.getElementById("myBtnContainer");
+        var btns = btnContainer.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function(){
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+        });
+        }
+    </script>
+    <!------------------------------------------
+    CONTACT SECTION: 
+    ------------------------------------------->
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <p class="subtitle">Want to get to know me better...</p>
+            <h2 class="title">Let's Connect</h2>
+            <p class="text">To collaborate on a project, chat, ask questions, give feedbaack or for any 
+                            other inquiries use the form below or email me directly.</p>
+
+            <div class="container">
+                <div class="contactinfo">
+                    <div>
+                        <h2>Contact Info</h2>
+                        <ul class="info">
+                            <li>
+                                <span><img src="images/Location.png"></span>
+                                <span>Location:<br>Based in Toronto, Canada</span>
+                            </li>
+                            <li>
+                                <span><img src="images/Mail.png"></span>
+                                <span>Email:<br>praise.se47@gmail.com</span>
+                            </li>
+                            <li>
+                                <span><img src="images/Telephone.png"></span>
+                                <span>Number:<Br>Available Upon Request</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class = "social-menu">
+                        <li><a href="https://www.twitter.com/praiseerianamie" target="_blank"><i class=" fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/praise-erianamie/" target="_blank"><i class=" fa fa-linkedin"></i></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCqZus3N21a76RMlUajQWe_Q" target="_blank"><i class=" fa fa-youtube"></i></a></li>
+                        <li><a href="https://www.instagram.com/praiseerianamie/" target="_blank"><i class=" fa fa-instagram"></i></a></li>
+                        <li><a href="https://praiseerianamie.medium.com" target="_blank"><i class=" fa fa-medium"></i></a></li>
+                        <li><a href="https://www.facebook.com/Praise.Erianamie" target="_blank"><i class=" fa fa-facebook"></i></a></li>
+                    </ul>
+                </div>
+                <div class="contactform">
+                    <h2>Send A Message</h2>
+                    <form action="https://formspree.io/f/xleozddw" method="Post" id="my-form">
+                        <div class="formbox">
+                            <div class="inputbox w50">
+                                <input type="text" name="first and last name" required>
+                                <span>First and Last Name</span>
+                            </div>
+                            <div class="inputbox w50">
+                                <input type="text" name="email" required>
+                                <span>Email Address</span>
+                            </div>
+                            <div class="inputbox w100">
+                                <div class="custom-select">
+                                    <select>
+                                        <option value="0">Select the Subject of the Message</option>
+                                        <option value="1">Connect and get to know you</option>
+                                        <option value="2">I have some feedback/option</option>
+                                        <option value="3">I'd like to recieve some advice</option>
+                                        <option value="4">Could you build a website for me</option>
+                                        <option value="5">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="inputbox w100">
+                                <textarea name="message" required></textarea>
+                                <span>Write your message here...</span>
+                            </div>
+                            <div class="inputbox w100">
+                                <input type="submit" value="Send">
+                            </div>
+                        </div>
+                    </form>
+                    <div id="status"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!------------------------------------------
+    FOOTER SECTION: 
+    ------------------------------------------->
+    <footer>
+        <span> Copyright 2020 <span>Praise Erianamie.</span> All rights reserved.</span>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
